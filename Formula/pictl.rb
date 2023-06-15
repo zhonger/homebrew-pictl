@@ -3,11 +3,12 @@ class Pictl < Formula
     desc "A command line tool for image processing and uploading (ex. S3-type)"
     homepage "https://github.com/zhonger/pictl"
     url "https://files.pythonhosted.org/packages/6a/e8/be81ccbb8b7a8f2ad7e56c30d2368ae36e1d8c9bc9aa66943b19f467396a/pictl-0.1.0.tar.gz"
+    version "0.1.0"
     sha256 "130f20279909592aff0e097c0fd9e1de2adaaf9a6a47f076d75f824f0c7b652a"
     license "MIT"
-  
+
     livecheck do
-      url :stable
+        url :stable
     end
     
     depends_on "python@3.10"
@@ -108,12 +109,11 @@ class Pictl < Formula
     end
     
     def install
-        virtualenv_create(libexec, "python3")
         virtualenv_install_with_resources
     end
     
     test do
-        false
+        system bin/"pictl", "--help"
     end
 
 end
