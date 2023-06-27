@@ -2,8 +2,8 @@ class Pictl < Formula
     include Language::Python::Virtualenv
     desc "Command-line tool for image processing and uploading (ex. S3-type)"
     homepage "https://github.com/zhonger/pictl"
-    url "https://files.pythonhosted.org/packages/6a/e8/be81ccbb8b7a8f2ad7e56c30d2368ae36e1d8c9bc9aa66943b19f467396a/pictl-0.1.0.tar.gz"
-    sha256 "130f20279909592aff0e097c0fd9e1de2adaaf9a6a47f076d75f824f0c7b652a"
+    url "https://files.pythonhosted.org/packages/13/bc/8f60cdafb47957424a77b37c2e5d8e972f418fcac80517e254047fc74d1b/pictl-0.2.0.tar.gz"
+    sha256 "acd70c5658e55e8c072ba58aa3cb909d2cfb2a4275f044e18e7a50d529da7b4d"
     license "MIT"
   
     livecheck do
@@ -13,7 +13,6 @@ class Pictl < Formula
     depends_on "pillow"
     depends_on "pygments"
     depends_on "python@3.10"
-    depends_on "rust"
     depends_on "six"
   
     resource "blessed" do
@@ -22,8 +21,8 @@ class Pictl < Formula
     end
   
     resource "boto3" do
-      url "https://files.pythonhosted.org/packages/6f/d9/7fffa68720d8d1a255fc8a8635d9d5a7673ffc7ab6fabdc4f7f023f78c10/boto3-1.26.146.tar.gz"
-      sha256 "3d7f1b43d2e5a10ee29d4940e714d72a2f6f1a6f6ba856c82ba9328d83062605"
+      url "https://files.pythonhosted.org/packages/1b/07/94eda63bf996c1f9d860b48f48448aa30ae67791035ac3bab18ec1f0525b/boto3-1.26.161.tar.gz"
+      sha256 "662731e464d14af1035f44fc6a46b0e3112ee011ac0a5ed416d205daa3e15f25"
     end
   
     resource "botocore" do
@@ -47,8 +46,8 @@ class Pictl < Formula
     end
   
     resource "markdown-it-py" do
-      url "https://files.pythonhosted.org/packages/e4/c0/59bd6d0571986f72899288a95d9d6178d0eebd70b6650f1bb3f0da90f8f7/markdown-it-py-2.2.0.tar.gz"
-      sha256 "7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1"
+      url "https://files.pythonhosted.org/packages/38/71/3b932df36c1a044d397a1f92d1cf91ee0a503d91e470cbd670aa66b07ed0/markdown-it-py-3.0.0.tar.gz"
+      sha256 "e3f60a94fa066dc52ec76661e37c851cb232d92f9886b15cb560aaada2df8feb"
     end
   
     resource "mdurl" do
@@ -72,28 +71,28 @@ class Pictl < Formula
     end
   
     resource "rich" do
-      url "https://files.pythonhosted.org/packages/02/97/0046b5e3c6a5057b5817e5e6c51a776d410b953e6a9c67ae249dafdd2999/rich-13.4.1.tar.gz"
-      sha256 "76f6b65ea7e5c5d924ba80e322231d7cb5b5981aa60bfc1e694f1bc097fe6fe1"
-    end
-  
-    resource "rtoml" do
-      url "https://files.pythonhosted.org/packages/d5/53/ac68f06b42de70958f0ddb2c6a9109054fc208951e4d61af86f0c7186254/rtoml-0.9.0.tar.gz"
-      sha256 "113f2e133d152d9424269c475b4a7d0679987078b543e88fcb16c870dc2c460d"
+      url "https://files.pythonhosted.org/packages/e3/12/67d0098eb77005f5e068de639e6f4cfb8f24e6fcb0fd2037df0e1d538fee/rich-13.4.2.tar.gz"
+      sha256 "d653d6bccede5844304c605d5aac802c7cf9621efd700b46c7ec2b51ea914898"
     end
   
     resource "s3transfer" do
       url "https://files.pythonhosted.org/packages/49/bd/def2ab4c04063a5e114963aae90bcd3e3aca821a595124358b3b00244407/s3transfer-0.6.1.tar.gz"
       sha256 "640bb492711f4c0c0905e1f62b6aaeb771881935ad27884852411f8e9cacbca9"
     end
-  
+
+    resource "tomlkit" do
+      url "https://files.pythonhosted.org/packages/10/37/dd53019ccb72ef7d73fff0bee9e20b16faff9658b47913a35d79e89978af/tomlkit-0.11.8.tar.gz"
+      sha256 "9330fc7faa1db67b541b28e62018c17d20be733177d290a13b24c62d1614e0c3"
+    end
+
     resource "urllib3" do
-      url "https://files.pythonhosted.org/packages/21/79/6372d8c0d0641b4072889f3ff84f279b738cd8595b64c8e0496d4e848122/urllib3-1.26.15.tar.gz"
-      sha256 "8a388717b9476f934a21484e8c8e61875ab60644d29b9b39e11e4b9dc1c6b305"
+      url "https://files.pythonhosted.org/packages/e2/7d/539e6f0cf9f0b95b71dd701a56dae89f768cd39fd8ce0096af3546aeb5a3/urllib3-1.26.16.tar.gz"
+      sha256 "8f135f6502756bde6b2a9b28989df5fbe87c9970cecaa69041edcce7f0589b14"
     end
   
     resource "wcwidth" do
-      url "https://files.pythonhosted.org/packages/89/38/459b727c381504f361832b9e5ace19966de1a235d73cdbdea91c771a1155/wcwidth-0.2.5.tar.gz"
-      sha256 "c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"
+      url "https://files.pythonhosted.org/packages/5e/5f/1e4bd82a9cc1f17b2c2361a2d876d4c38973a997003ba5eb400e8a932b6c/wcwidth-0.2.6.tar.gz"
+      sha256 "a5220780a404dbe3353789870978e472cfe477761f06ee55077256e509b156d0"
     end
   
     def install
