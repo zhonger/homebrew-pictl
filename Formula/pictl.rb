@@ -2,8 +2,8 @@ class Pictl < Formula
     include Language::Python::Virtualenv
     desc "Command-line tool for image processing and uploading (ex. S3-type)"
     homepage "https://github.com/zhonger/pictl"
-    url "https://files.pythonhosted.org/packages/13/bc/8f60cdafb47957424a77b37c2e5d8e972f418fcac80517e254047fc74d1b/pictl-0.2.0.tar.gz"
-    sha256 "acd70c5658e55e8c072ba58aa3cb909d2cfb2a4275f044e18e7a50d529da7b4d"
+    url "https://files.pythonhosted.org/packages/bf/07/88c0cfd54ac5124385e99f893a8bb2001420fd8262bb5ee992de48e70d76/pictl-0.3.0.tar.gz"
+    sha256 "a2223a4b069ffdf11a1af3232afb1987fec03e4a291f0790a219e3b608328dec"
     license "MIT"
   
     livecheck do
@@ -21,13 +21,13 @@ class Pictl < Formula
     end
   
     resource "boto3" do
-      url "https://files.pythonhosted.org/packages/1b/07/94eda63bf996c1f9d860b48f48448aa30ae67791035ac3bab18ec1f0525b/boto3-1.26.161.tar.gz"
-      sha256 "662731e464d14af1035f44fc6a46b0e3112ee011ac0a5ed416d205daa3e15f25"
+      url "https://files.pythonhosted.org/packages/0f/3c/8a0b46a53326236006a4c4d1a0d49c4ff3a83368492c8308031fbaf61583/boto3-1.26.165.tar.gz"
+      sha256 "9e7242b9059d937f34264125fecd844cb5e01acce6be093f6c44869fdf7c6e30"
     end
   
     resource "botocore" do
-      url "https://files.pythonhosted.org/packages/61/6f/f124fbf71d9a327bf1abbca92b7809010224a381fb740226477bac7d6c88/botocore-1.29.146.tar.gz"
-      sha256 "77f7793cb36074eb84d606a23ad6e1d57c20f7a2eeab7d9136d3e63c584e0504"
+      url "https://files.pythonhosted.org/packages/3d/f6/d35a27c73dc1053abdfe8524d1e488073fccb51e43c88da61b8fe29522e3/botocore-1.29.165.tar.gz"
+      sha256 "988b948be685006b43c4bbd8f5c0cb93e77c66deb70561994e0c5b31b5a67210"
     end
   
     resource "click" do
